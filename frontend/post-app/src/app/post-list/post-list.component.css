@@ -1,0 +1,48 @@
+.post-table{
+    width: 100%;
+    border: 1px solid;
+    border-collapse: collapse;
+    margin: auto;
+}
+
+.post-table thead{
+    background-color: rgba(140, 142, 243, 0.4);
+    border-bottom: solid 1px;
+}
+
+.post-table th{
+    border-right: solid 1px;
+    display: table-cell;
+    text-align: center;
+    letter-spacing: 1px;
+    padding: 10px 5px;
+    font-size: 20px;
+    
+}
+
+.post-table td{
+    display: table-cell;
+    text-align: center;
+    letter-spacing: 1px;
+    padding: 15px;
+    font-size: 18px;
+    border-bottom: solid 1px;
+    border-right: solid 1px;
+
+}
+
+.boton-action{
+    margin: auto;
+    border: none;
+    border-radius: 14px;
+    background-color: rgb(227 1 1);
+    cursor: pointer;
+    font-size: 18px;
+    padding: 5px 10px;
+    color: white;
+    font-weight: 700;
+}
+
+.boton-action:hover{
+    scale: 1.125;
+}

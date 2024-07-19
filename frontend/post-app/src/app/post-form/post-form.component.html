@@ -1,0 +1,22 @@
+
+<section class="section-create-posts"  >
+    <div class="create-post-container">
+        <div class="create-post-container">
+            <label class="input-title" for="">Nombre</label>
+            <input class="input-text" 
+                type="text" placeholder="Nombre" [(ngModel)]="nombre" autocomplete="off">
+        </div>
+        <div class="create-post-container">
+            <label class="input-title" for="">Descripción</label>
+            <textarea class="input-area"
+                placeholder="Descripción" [(ngModel)]="descripcion"></textarea>
+        </div>
+    </div>
+
+    <div class="container-actions">
+        <button class="button-create" (click)="addPost()">Crear Post</button>
+    </div>
+
+</section>
+
+  

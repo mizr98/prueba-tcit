@@ -1,0 +1,16 @@
+
+<table class="post-table">
+    <thead>
+        <th>Nombre</th>
+        <th>Descripción</th>
+        <th>Accion</th>
+    </thead>
+    <tr *ngFor="let post of posts$ | async">
+        <td>{{post.nombre}}</td>
+        <td>{{post.descripcion}}</td>
+        <td><button
+            class="boton-action"
+             (click)="deletePost(post.id)">Eliminar</button>
+        </td>
+    </tr>
+</table>

@@ -1,0 +1,15 @@
+<div style="display: flex;justify-content: space-between;margin: 20px 0;">
+    <input type="text" placeholder="Buscar por nombre" [(ngModel)]="filter" (ngModelChange)="updateOnChangeFilter($event)">
+    <button (click)="updateFilter()">Buscar</button>
+  </div>
+  @if (filteredPosts.length) {
+    <h2>Post encontrados</h2>
+  }
+  <div *ngFor="let post of filteredPosts">
+    <h3>Nombre del post: {{ post.nombre }}</h3>
+    <p>Descripcion del post: <strong>{{ post.descripcion }}</strong> </p>
+    @if (filteredPosts.length>1) {
+      <hr>
+    }
+  </div>
+  
