@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "cEn7XA2wjqs=",
+  "dgSpecHash": "Txx5lGGVlho=",
   "success": true,
-  "projectFilePath": "C:\\Users\\mati-\\source\\repos\\ChallengeApi\\ChallengeApi\\ChallengeApi.csproj",
+  "projectFilePath": "C:\\Users\\mati-\\OneDrive\\Documentos\\GitHub\\prueba-tcit\\backend\\ChallengeApi\\ChallengeApi.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\mati-\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\mati-\\.nuget\\packages\\microsoft.entityframeworkcore\\6.0.32\\microsoft.entityframeworkcore.6.0.32.nupkg.sha512",

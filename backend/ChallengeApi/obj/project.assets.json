@@ -1264,11 +1264,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\mati-\\source\\repos\\ChallengeApi\\ChallengeApi\\ChallengeApi.csproj",
+      "projectUniqueName": "C:\\Users\\mati-\\OneDrive\\Documentos\\GitHub\\prueba-tcit\\backend\\ChallengeApi\\ChallengeApi.csproj",
       "projectName": "ChallengeApi",
-      "projectPath": "C:\\Users\\mati-\\source\\repos\\ChallengeApi\\ChallengeApi\\ChallengeApi.csproj",
+      "projectPath": "C:\\Users\\mati-\\OneDrive\\Documentos\\GitHub\\prueba-tcit\\backend\\ChallengeApi\\ChallengeApi.csproj",
       "packagesPath": "C:\\Users\\mati-\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\mati-\\source\\repos\\ChallengeApi\\ChallengeApi\\obj\\",
+      "outputPath": "C:\\Users\\mati-\\OneDrive\\Documentos\\GitHub\\prueba-tcit\\backend\\ChallengeApi\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\mati-\\AppData\\Roaming\\NuGet\\NuGet.Config",
