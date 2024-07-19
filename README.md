@@ -24,7 +24,7 @@
 4. **Creación de la base de datos:**
    - Asegúrate de que tienes .NET instalado y luego ejecuta el siguiente comando en la consola para crear la base de datos en PostgreSQL basada en la clase `Posts` que se encuentra en la carpeta `Models`:
      ```bash
-     dotnet ef database update firsmigration --project ChallengeApi.csproj
+     dotnet ef database update firsmigration --project ./ChallengeApi/ChallengeApi.csproj
      ```
 
 5. **Verificación de la base de datos:**
@@ -42,7 +42,7 @@
    - Abre un nuevo terminal en Visual Studio Code.
    - Ejecuta el siguiente comando para instalar los paquetes npm:
      ```bash
-     npm install
+     npm install --legacy-peer-deps
      ```
 
 3. **Levantamiento del frontend:**
