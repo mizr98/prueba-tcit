@@ -1,36 +1,53 @@
-# prueba-tcit
 
-Lo primero es configurar el backend:
-Para ello iremos abriremos la carpeta backend y haremos click en el archivo ChallengeApi.sln, una vez abramos la solucion nos iremos al archivo appsetting.json y reemplazaremos las variables $TU_BASE, $TU_USUARIO y $TU_PASSWORD con el valor que esten configurados de PostgreSQL.
-Una vez realizado estos cambios abriremos la consolo de paquete nuget, para abrir esta consola se debe ir a la pestaña de herramientas "Administrador de paquetes nuget" y hacer click en la opcion "Consola del administrador de paquetes" una vez se abra la consola ejecutaremos el siguiente comando para verificar si tenemos instalado dotnet
+# Prueba-TCIT
 
-```bash
-$ dotnet
-```
+## Configuración del Backend
 
-En caso de no estar instalado procederemos a instalarlo con el siguiente comando
+1. **Abrir la solución:**
+   - Navega a la carpeta `backend` y abre el archivo `ChallengeApi.sln`.
 
-```bash
-$ dotnet tool install --global dotnet-ef
-```
+2. **Configuración del archivo `appsettings.json`:**
+   - Reemplaza las variables `$TU_BASE`, `$TU_USUARIO`, y `$TU_PASSWORD` con los valores correspondientes de tu base de datos PostgreSQL.
 
-Luego de ya asegurarnos que tenemos dotnet instalado, ejecutaremos el siguiente script en la consolo para que se cree una base de datos en nuestro servidor de PostgreSQL en base a la clase 'Posts' que esta dentro de la carpeta 'Models'
+3. **Verificación e instalación de .NET:**
+   - Abre la consola de paquetes NuGet: 
+     - Ve a `Herramientas` > `Administrador de paquetes NuGet` > `Consola del administrador de paquetes`.
+   - En la consola, ejecuta el siguiente comando para verificar si tienes .NET instalado:
+     ```bash
+     dotnet
+     ```
+   - Si .NET no está instalado, instálalo con:
+     ```bash
+     dotnet tool install --global dotnet-ef
+     ```
 
-```bash
-$ dotnet ef database update firsmigration --project ChallengeApi.csproj
-```
+4. **Creación de la base de datos:**
+   - Asegúrate de que tienes .NET instalado y luego ejecuta el siguiente comando en la consola para crear la base de datos en PostgreSQL basada en la clase `Posts` que se encuentra en la carpeta `Models`:
+     ```bash
+     dotnet ef database update firsmigration --project ChallengeApi.csproj
+     ```
 
-Una vez realizado esto verificar si en nuestro servidor de PostgreSQL se haya creado la base de datos y a su vez verificar si la tabla tambien se creo correctamente.
+5. **Verificación de la base de datos:**
+   - Verifica que la base de datos y la tabla se hayan creado correctamente en tu servidor de PostgreSQL.
 
-En caso de que esto sea exitoso pasaremos a levantar el backend apretando la tecla f5.
+6. **Levantamiento del backend:**
+   - Presiona la tecla `F5` para levantar el backend.
 
-Una vez levantada la api nos toca levantar el frontend para ello ingresaremos a la carpeta frontend y abriremos la carpeta post-app dentro de visualstudio code
-Ya con la carpeta abierta en el editor nos iremos a la pestaña de terminal y le damos a nuevo terminal, luego de eso ejecutaremos el siguiente comando en la termial para instalar los paquetes de npm
-```bash
-$ npm install
-```
+## Configuración del Frontend
 
-Esto puede tardar unos momentos y una vez termine ejecutaremos el siguiente comando para levantar el front end
-```bash
-$ ng serve -o
-```
+1. **Abrir el proyecto en Visual Studio Code:**
+   - Navega a la carpeta `frontend` y abre la carpeta `post-app` en Visual Studio Code.
+
+2. **Instalación de paquetes npm:**
+   - Abre un nuevo terminal en Visual Studio Code.
+   - Ejecuta el siguiente comando para instalar los paquetes npm:
+     ```bash
+     npm install
+     ```
+
+3. **Levantamiento del frontend:**
+   - Una vez finalizada la instalación de paquetes, ejecuta el siguiente comando para levantar el frontend:
+     ```bash
+     ng serve -o
+     ```
+Y ahora a probar las opciones.
